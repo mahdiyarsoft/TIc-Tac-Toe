@@ -1,0 +1,138 @@
+@import url('../fonts/fonts.css');
+@import url('./color/color1.css');
+
+:root {
+    --border: 4px solid var(--white);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--green);
+    display: flex;
+    flex-flow: column;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+main {
+    height: 93%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column;
+}
+
+footer {
+    height: 7%;
+    width: 100%;
+    background-color: #202020;
+}
+
+.topBar {
+    width: 30%;
+    min-width: 350px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 10%;
+}
+
+.titr {
+    width: 100%;
+    text-align: center;
+    color: var(--white);
+    /* font-family: 'Cairo', sans-serif; */
+    font-family: 'Josefin Sans', sans-serif;
+    /* font-family: 'Varela Round', sans-serif; */
+    font-size: 300%;
+    margin-bottom: 10%;
+}
+
+.gameBoard {
+    width: 30%;
+    min-width: 350px;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    aspect-ratio: 1 / 1;
+}
+
+.col {
+    width: 100%;
+    display: flex;
+    flex-flow: row wrap;
+    height: 33.3%;
+}
+
+.row {
+    height: 100%;
+    display: flex;
+    width: 33.3%;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.X-item {
+    color: var(--darkgreen);
+    font-size: 450%;
+    /* font-family: 'Secular One', sans-serif; */
+    font-family: 'Varela Round', sans-serif;
+}
+.O-item {
+    color: var(--white);
+    font-size: 500%;
+    /* font-family: 'Secular One', sans-serif; */
+    font-family: 'Varela Round', sans-serif;
+}
+
+#p1 {
+    border-right: var(--border);
+    border-bottom: var(--border);
+}
+
+#p2 {
+    border: var(--border);
+    border-top: none;
+}
+
+#p3 {
+    border-bottom: var(--border);
+    border-left: var(--border);
+}
+
+#p4 {
+    border-top: var(--border);
+    border-right: var(--border);
+    border-bottom: var(--border);
+}
+
+#p5 {
+    border: var(--border);
+
+}
+
+#p6 {
+    border-top: var(--border);
+    border-left: var(--border);
+    border-bottom: var(--border);
+}
+#p7 {
+    border-top: var(--border);
+    border-right: var(--border);
+}
+#p8 {
+    border: var(--border);
+    border-bottom: none;
+}
+#p9 {
+    border-top: var(--border);
+    border-left: var(--border);
+}
